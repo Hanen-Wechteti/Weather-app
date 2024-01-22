@@ -1,0 +1,113 @@
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #fff;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 1.75rem;
+  background-color: gray;
+}
+
+.weather-input {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 30px;
+  align-items: center;
+}
+.weather-input .cityInput {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid hsla(0, 0%, 20%, 0.3);
+  border-radius: 10px;
+  width: 300px;
+}
+.weather-input .searchBtn {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: hsl(122, 39%, 50%);
+  color: #fff;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.weather-input .searchBtn:hover {
+  background-color: hsl(122, 39%, 40%);
+}
+
+.days-forecast {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+#unsplashImage {
+  max-height: 500px;
+  border: 1px;
+  transform: rotate(3deg);
+}
+
+.currentWeather {
+  display: flex;
+  margin-left: 300px;
+  color: black;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-around;
+  width: 400px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}
+.currentWeather .h2 {
+  font-size: 1.7rem;
+}
+.currentWeather .icon img {
+  max-width: 120px;
+}
+.currentWeather.loading {
+  visibility: hidden;
+}
+
+.weather-cards {
+  display: flex;
+  gap: 80px;
+}
+.weather-cards .card {
+  list-style: none;
+  color: black;
+  padding: 18px 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 20%;
+  height: 300px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}
+.weather-cards .card h4 {
+  font-size: 1rem;
+}
+.weather-cards .card h3 {
+  font-size: 1.5rem;
+}
+
+#autoCompleteList {
+  position: absolute;
+  width: 20%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-top: 60px;
+  background-color: #fff;
+  cursor: pointer;
+}
+#autoCompleteList div:hover {
+  background-color: #7698b9;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
