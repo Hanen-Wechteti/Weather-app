@@ -123,7 +123,7 @@ const getWeatherDetails = (cityName, lat, lon) => {
 }
 
 
-// Fonction pour obtenir des exemples de villes depuis une API (remplacez l'URL par votre API)
+// Fonction pour obtenir des exemples de villes 
 const cityName = cityInput.value.trim();
 
 const getCityCoordinates = async () => {
@@ -180,7 +180,7 @@ cityInput.addEventListener('input', async () => {
             console.error('Erreur lors de la récupération des exemples de villes:', error);
         }
     } else {
-        autoCompleteContainer.innerHTML = ''; // Efface l'autocomplete si le champ de recherche est vide
+        autoCompleteContainer.innerHTML = ''; 
     }
 });
 
@@ -208,15 +208,15 @@ function getUserChoice() {
     return localStorage.getItem('userCity');
 }
 
-// Au chargement de la page, vérifiez s'il y a un choix précédent de l'utilisateur
+
 document.addEventListener('DOMContentLoaded', () => {
     const previousUserChoice = getUserChoice();
 
     if (previousUserChoice) {
-        // Remplissez le champ de saisie avec le choix précédent
+        
         cityInput.value = previousUserChoice;
 
-        // Lancez la recherche météorologique pour le choix précédent
+
         getCityCoordinates();
     }
 });
