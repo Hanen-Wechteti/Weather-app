@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #e3f2fd;
   font-family: sans-serif;
 }
 
@@ -8,7 +8,7 @@ h1 {
   padding: 18px 0;
   text-align: center;
   font-size: 1.75rem;
-  background-color: gray;
+  background-color: #5372F0;
 }
 
 .weather-input {
@@ -20,17 +20,18 @@ h1 {
 }
 .weather-input .cityInput {
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   border: 2px solid hsla(0, 0%, 20%, 0.3);
   border-radius: 10px;
   width: 300px;
+  height: 40px;
 }
 .weather-input .searchBtn {
   padding: 10px 20px;
   font-weight: bold;
   font-size: 1.5rem;
-  background-color: hsl(122, 39%, 50%);
+  background-color: #5372F0;
   color: #fff;
   width: 200px;
   border: none;
@@ -38,7 +39,7 @@ h1 {
   cursor: pointer;
 }
 .weather-input .searchBtn:hover {
-  background-color: hsl(122, 39%, 40%);
+  background-color: rgb(0, 76, 255);
 }
 
 .days-forecast {
@@ -57,7 +58,7 @@ h1 {
   margin-left: 300px;
   color: black;
   padding: 50px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   justify-content: space-around;
   width: 400px;
@@ -82,7 +83,7 @@ h1 {
   color: black;
   padding: 18px 16px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   width: 20%;
